@@ -6,22 +6,26 @@
 	<meta name="author" content="YOHAN">
 	<meta name="description" content="Тестовый сайт Йохана">
 	<title>Главная страница</title>
+	<link rel="stylesheet" href="CSS/styles.css">
 </head>
 <body>
 <header>
-	<a title="Переход на официальный сайт гугла" href="https://google.com" target="blank">Тестовая ссылка... (с подсказкой и переадресацией) | </a>
-	<a href="about.html">Про нас... | </a>
-	<a href="licoponedy.html">Лицо понеди</a>
+	<a class="main-link" title="Переход на официальный сайт гугла" href="https://google.com" target="blank">Тестовая ссылка... (с подсказкой и переадресацией) | </a>
+	<a class="main-link" href="about.html">Про нас... | </a>
+	<a class="main-link" href="licoponedy.html">Лицо понеди</a>
 </header>
 
 <main>
-	<h1>Привет!</h1>
-	<p>Добро пожаловать на мой новый сайт где я буду тестировать свои знания
-	языка разметки <big><b>"HTML"</b></big></p>
-	<p>Так же потом я буду использовать на этом сайте язык <big><b>"CSS"</b></big></p>
-	<p title="PoNeDy ЧМО!!!">Подсказака <i>(наведись)</i></p>
+	<div id="first">
+		<h1>Привет!</h1>
+		<p>Добро пожаловать на мой новый сайт где я буду тестировать свои знания
+		языка разметки <big><b>"HTML"</b></big></p>
+		<p>Так же потом я буду использовать на этом сайте язык <big><b>"CSS"</b></big></p>
+		<p title="PoNeDy ЧМО!!!">Подсказка <i>(наведись)</i></p><!-- блок с фоном -->
+	</div>
 	<hr>
-	<details> <!-- Рассказ о понеди (ЧМО) --> 
+	<div id="rasskaz">
+		<details> <!-- Рассказ о понеди (ЧМО) --> 
 		<summary><big><b>Краткий рассказ о том как произвелось имя PoNeDy</b></big></summary>
 			<h2>Краткий рассказ о том как произвелось имя PoNeDy</h2>
 			<a name="ponedy_chmo"></a>
@@ -31,7 +35,8 @@
 			<p>Если кто не знал расшифровка "ЧМО" обоначает "Человек морально обоссаный". Далее в 1939 году во время начала 2 мировой войны это имя обрело новое <i>"обличие"</i></p>
 			<p>теперь "Хали" перелегло в новое слово "PoNeDy" и до сих пор оно используется в современном лексиконе.</p>
 			<p><b>Ну вот и всё, теперь вы знаете обозначение слова "PoNeDy"... надеюсь вам понравилась эта статья, всем пока!</b></p> 
-	</details>
+		</details>
+	</div>
 	<hr>
 	<h2>Форма</h2> <!-- Форма --> 
 		<form action="" method="post">
@@ -52,9 +57,11 @@
 			<a href="404.html">Отправить форму</a>
 		</form>
 	<hr>
+	<progress>
 </main>
 
 <footer>
+	<hr>
 	<h5>YOHAN TEST SITE. Copyright. 2023. by yohan.</h5>
 </footer>
 
