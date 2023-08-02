@@ -10,40 +10,37 @@
 </head>
 <body>
 <header>
-	<a class="main-link" title="Переход на официальный сайт гугла" href="https://google.com" target="blank">Тестовая ссылка... (с подсказкой и переадресацией) | </a>
-	<a class="main-link" href="about.html">Про нас... | </a>
-	<a class="main-link" href="licoponedy.html">Лицо понеди</a>
+	<div id="header_links"><span><a href="index.html" class="main-link">Главная страница | </a><a class="main-link" href="about.html">Про нас... | </a><a class="main-link" href="licoponedy.html">Лицо понеди</a></span></div>
 </header>
 
 <main>
-	<div id="first">
-		<h1>Привет!</h1>
-		<p>Добро пожаловать на мой новый сайт где я буду тестировать свои знания
-		языка разметки <big><b>"HTML"</b></big></p>
-		<p>Так же потом я буду использовать на этом сайте язык <big><b>"CSS"</b></big></p>
-		<p title="PoNeDy ЧМО!!!">Подсказка <i>(наведись)</i></p><!-- блок с фоном -->
+	<div id="first"> <!-- блок с фоном -->
+			<h1>Привет!</h1>
+			<p>Добро пожаловать на мой новый сайт где я буду тестировать свои знания
+			языка разметки <big><b>"HTML"</b></big></p>
+			<p>Так же потом я буду использовать на этом сайте язык <big><b>"CSS"</b></big></p>
+			<p title="PoNeDy ЧМО!!!">Подсказка <i>(наведись)</i></p>
 	</div>
-	<hr>
-	<div id="rasskaz">
-		<details> <!-- Рассказ о понеди (ЧМО) --> 
+	<div id="rasskaz"> <!-- Рассказ о понеди (ЧМО) --> 
+		<details> 
 		<summary><big><b>Краткий рассказ о том как произвелось имя PoNeDy</b></big></summary>
 			<h2>Краткий рассказ о том как произвелось имя PoNeDy</h2>
 			<a name="ponedy_chmo"></a>
-			<p>PoNeDy (от слова "ЧМО") было образовано в 1325 году до нашей эры. Далее</p>
-			<p>это имя постепенно изменяло своё <i>обличие</i>... Уже в 1110 году до нашей эры</p>
-			<p>это имя имело уже новое название - "Хали", но оно также имя своё обозначение "Ч.М.О."</p>
-			<p>Если кто не знал расшифровка "ЧМО" обоначает "Человек морально обоссаный". Далее в 1939 году во время начала 2 мировой войны это имя обрело новое <i>"обличие"</i></p>
-			<p>теперь "Хали" перелегло в новое слово "PoNeDy" и до сих пор оно используется в современном лексиконе.</p>
+			<p>PoNeDy (от слова "ЧМО") было образовано в 1325 году до нашей эры. Далее
+			это имя постепенно изменяло своё <i>обличие</i>... Уже в 1110 году до нашей эры<br>
+			это имя имело уже новое название - "Хали", но оно также имело своё обозначение "Ч.М.О."
+			Если кто не знал расшифровка "ЧМО" обоначает "Человек морально обоссаный". Далее в 1939 году во время начала 2 мировой войны это имя обрело новое <i>"обличие"</i>
+			теперь "Хали" перелегло в новое слово "PoNeDy" и до сих пор оно используется в современном лексиконе.
 			<p><b>Ну вот и всё, теперь вы знаете обозначение слова "PoNeDy"... надеюсь вам понравилась эта статья, всем пока!</b></p> 
 		</details>
 	</div>
-	<hr>
-	<h2>Форма</h2> <!-- Форма --> 
+	<div id="form_block"> <!-- Форма -->
+		<h2>Форма</h2>  
 		<form action="" method="post">
 			<label for="user_nickname">Введите ваш никнейм:</label><br>
-				<input type="text" name="user_nickname" placeholder="Укажите здесь..."><br><br>
+				<input class="input_text" type="text" name="user_nickname" placeholder="Укажите здесь..."><br><br>
 			<label for="user_age">Укажите ваш возраст:</label><br>
-				<input type="text" name="user_age" placeholder="Укажите здесь..."><br><br>
+				<input class="input_text" type="text" name="user_age" placeholder="Укажите здесь..."><br><br>
 			<label for="radio_ponedy">Ответьте на вопрос: Понеди <i>БЕЗДАРЬ?</i></label><br>
 				<input type="radio" name="radio_ponedy">
 				<label>Да</label>
@@ -54,15 +51,17 @@
 				<label>Да</label>
 				<input type="radio" name="radio_ocenka" disabled>
 				<label>Нет (Кнопка (<i>Не отвечает</i>))</label><br><br>
-			<a href="404.html">Отправить форму</a>
 		</form>
-	<hr>
-	<progress>
+			<div id="send-form">
+				<a class="main-link" href="404.html">Отправить форму</a>
+			</div>
+	</div>	
 </main>
 
 <footer>
-	<hr>
-	<h5>YOHAN TEST SITE. Copyright. 2023. by yohan.</h5>
+	<div id="footer_block">
+		<h5>YOHAN TEST SITE. Copyright. 2023. by yohan.</h5>
+	</div>
 </footer>
 
 </body>
