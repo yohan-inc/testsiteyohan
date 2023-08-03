@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,600;0,800;1,500;1,600;1,800&display=swap');
 
+* {
+	margin: 0;
+	padding: 0;
+}
+
 /*
 -------------------
  Главная страница 
@@ -14,12 +19,12 @@ body {
 
 #header_links {
 	text-align: center;
-	padding-top: 15px;
-	padding-bottom: 15px;
+	line-height: 40px;
+	height: 40px;
 	margin-bottom: 0;
 	background-color: #141517;
 	border-radius: 25px;
-
+	margin: 10px;
 }
 
 #first {
@@ -31,17 +36,13 @@ body {
 	padding-top: 10px;
 	padding-left: 20px;
 	padding-bottom: 10px;
-	margin-bottom: 10px;
-	margin-top: 10px;
+	margin: 10px;
+	margin-top: 0;
+	line-height: 40px;
 }
 
 #rasskaz {
-	background-color: #2e3136;
-	border-radius: 20px;
-	margin-bottom: 10px;
-	padding-bottom: 10px;
-	padding-top: 10px;
-	padding-left: 20px;
+	line-height: 30px;
 }
 
 #rasskaz summary {
@@ -49,12 +50,25 @@ body {
 }
 
 #form_block {
-	background-color: #2e3136;
-	border-radius: 20px;
-	padding-left: 20px;
-	padding-bottom: 20px;
-	padding-top: 10px;
-	margin-bottom: 10px;
+	line-height: 25px;
+	width: 370px;
+	padding: 10px;
+	float: left;
+}
+
+#form_area {
+	width: 350px;
+	margin: 0;
+	margin-bottom: 20px;
+}
+
+#form_right {
+	float: left;
+	width: 65%;
+	text-align: center;
+	padding-top: 205px;
+	padding-bottom: 205px;
+	padding-left: 0;
 }
 
 .input_text {
@@ -69,9 +83,13 @@ body {
 	background-color: #141517;
 	text-align: center;
 	border-radius: 25px;
-	padding-top: 1px;
-	padding-bottom: 1px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	margin: 10px;
+	margin-top: 0;
+	clear: both;
 }
+
 
 /*
 -------------------
@@ -99,7 +117,31 @@ hr {
 	border-radius: 15px;
 	padding-top: 7px;
 	padding-bottom: 7px;
-	padding-left: 15px;
-	width: 170px;
+	width: 300px;
+	position: relative;
+	right: -30px;
+	text-align: center;
+}
 
+.default-block {
+	background-color: #2e3136;
+	border-radius: 20px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	padding-left: 20px;
+	margin: 10px;
+	margin-top: 0;
+}
+
+.gradient-block {
+	background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTK0OEBwdGrOPWafoS0-fy_ENQTYX3RQTti16rWHNI7&s') no-repeat;
+	background-size: cover;
+	border: 10px solid;
+	border-color: #2e3136;
+	border-radius: 20px;
+	padding-left: 20px;
+	padding-bottom: 20px;
+	padding-top: 20px;
+	margin: 10px;
+	margin-top: 0;
 }
