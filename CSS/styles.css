@@ -5,12 +5,6 @@
 	padding: 0;
 }
 
-/*
--------------------
- Главная страница 
--------------------
-*/
-
 body {
 	background-color: #1f2124;
 	color: #e3e3e3;
@@ -19,13 +13,32 @@ body {
 
 #header_links {
 	text-align: center;
-	line-height: 40px;
-	height: 40px;
+	padding-top: 15px;
+	padding-bottom: 15px;
 	margin-bottom: 0;
 	background-color: #141517;
 	border-radius: 25px;
 	margin: 10px;
 }
+
+#footer_block {
+	background-color: #141517;
+	text-align: center;
+	border-radius: 25px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	margin: 10px;
+	margin-top: 0;
+	clear: both;
+}
+
+/*
+-------------------
+ Главная страница 
+-------------------
+*/
+
+
 
 #first {
 	background: url('https://img2.akspic.ru/crops/8/4/7/2/7/172748/172748-reka_chambal-voda-san_francisko_oklend_bej_bridzh-planshet-oblako-1920x1080.jpg') no-repeat;
@@ -51,24 +64,23 @@ body {
 
 #form_block {
 	line-height: 25px;
-	width: 370px;
 	padding: 10px;
-	float: left;
 }
 
 #form_area {
-	width: 350px;
-	margin: 0;
-	margin-bottom: 20px;
+	text-align: center;
 }
 
-#form_right {
-	float: left;
-	width: 65%;
+#send-form {
+	background-color: #141517;
+	border-radius: 15px;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	width: 300px;
+  	display: flex;
+  	justify-content: center;
 	text-align: center;
-	padding-top: 205px;
-	padding-bottom: 205px;
-	padding-left: 0;
+	margin: 0 auto;
 }
 
 .input_text {
@@ -79,21 +91,9 @@ body {
 	background-color: #141517;
 }
 
-#footer_block {
-	background-color: #141517;
-	text-align: center;
-	border-radius: 25px;
-	padding-top: 15px;
-	padding-bottom: 15px;
-	margin: 10px;
-	margin-top: 0;
-	clear: both;
-}
-
-
 /*
 -------------------
-	Остальное 
+	 Остальное 
 -------------------
 */
 
@@ -109,18 +109,7 @@ hr {
 }
 
 .height_vh {
-	margin-bottom: 55vh;
-}
-
-#send-form {
-	background-color: #141517;
-	border-radius: 15px;
-	padding-top: 7px;
-	padding-bottom: 7px;
-	width: 300px;
-	position: relative;
-	right: -30px;
-	text-align: center;
+	margin-bottom: 50%;
 }
 
 .default-block {
@@ -145,3 +134,23 @@ hr {
 	margin: 10px;
 	margin-top: 0;
 }
+
+.text-button {
+	background-color: #2e3136;
+	border-radius: 20px;
+	text-align: center;
+	margin: 10px;
+	margin-top: 0;
+	width: 200px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+#back-other-pages-button {
+	margin: 0 auto;
+
+}
+
+.default-text {
+	margin-bottom: 20px;
+	padding-left: 20px;
